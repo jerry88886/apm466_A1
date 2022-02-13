@@ -168,22 +168,22 @@ Q4c)\textbf{This is the plot of all the spot curves:}
 ```{r,fig.height=3, fig.width=5}
 # Plot the Spots Curve
 interval = seq(1,4,1)
-plot(interval, forward_set$`2022-01-10 Forwards rates`,type='l',col='red',
+plot(interval, forward_set$`2022-01-10 Forward rates`,type='l',col='red',
      xlab = 'Years from 2022',ylab = "Forward rates",lwd=1,
      main = "All 1-1, 1-2, 1-3, 1-4yr Forward Curves")
-lines(interval,forward_set$`2022-01-11 Forwards rates`,col='yellow')
-lines(interval,forward_set$`2022-01-12 Forwards rates`,col='blue')
-lines(interval,forward_set$`2022-01-13 Forwards rates`,col='green')
-lines(interval,forward_set$`2022-01-14 Forwards rates`,col='gray')
-lines(interval,forward_set$`2022-01-17 Forwards rates`,col='purple')
-lines(interval,forward_set$`2022-01-18 Forwards rates`,col='gold')
-lines(interval,forward_set$`2022-01-19 Forwards rates`,col='brown')
-lines(interval,forward_set$`2022-01-20 Forwards rates`,col='cyan')
-lines(interval,forward_set$`2022-01-21 Forwards rates`,col='orange')
+lines(interval,forward_set$`2022-01-11 Forward rates`,col='yellow')
+lines(interval,forward_set$`2022-01-12 Forward rates`,col='blue')
+lines(interval,forward_set$`2022-01-13 Forward rates`,col='green')
+lines(interval,forward_set$`2022-01-14 Forward rates`,col='gray')
+lines(interval,forward_set$`2022-01-17 Forward rates`,col='purple')
+lines(interval,forward_set$`2022-01-18 Forward rates`,col='gold')
+lines(interval,forward_set$`2022-01-19 Forward rates`,col='brown')
+lines(interval,forward_set$`2022-01-20 Forward rates`,col='cyan')
+lines(interval,forward_set$`2022-01-21 Forward rates`,col='orange')
 legend("topleft", Date, lwd=2, cex=0.5,pch=15, bty="n",
        col=c("red","yellow", "blue","green", "gray","purple","gold","brown","cyan","orange"))
 ```
-I used the formula of forward rate $2[[\frac{(1+s_1)^a}{(1+s_2)^b}]^\frac{1}{a-b}-1]$ where a and b are the number of years until a further future date and number of years until a closer future date (Vaidya, 2022). Then, I plot all of the forward rates using different colors in terms of their collected dates. Overall, all curves superimposed on each other forms a linear and increasing trend.  
+I used the formula of forward rate $2[[\frac{(1+s_1)^a}{(1+s_2)^b}]^\frac{1}{a-b}-1]$ where a and b are the number of years until a further future date and number of years until a closer future date (Vaidya, 2022). Then, I plot all of the forward rates using different colors in terms of their collected dates. Overall, all curves superimposed on each other forms a linear and increasing trend before the first 2 years from 2022 and becomes stable after that time.  
 
 Q5
 \textbf{This is the covariance matrix for log-returns of yields:}
