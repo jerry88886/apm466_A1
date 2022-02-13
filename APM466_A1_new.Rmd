@@ -273,6 +273,6 @@ Team, T. I. (2022, January 23). Yield to maturity – YTM vs. spot rate: What's 
 Vaidya, A. byM. T. R. byD. (2022, February 4). Forward rate formula. WallStreetMojo. Retrieved February 12, 2022, from https://www.wallstreetmojo.com/forward-rate-formula/ 
 
 Github Link: 
-https://github.com/jerry88886/apm466_A1.git
+https://github.com/jerry88886/apm466_A1/blob/main/APM466_A1_new.Rmd
 
 
