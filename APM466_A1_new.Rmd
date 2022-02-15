@@ -116,10 +116,10 @@ mature_in_month_new <- c(1,5,13,16,25,28,37,40,49,52,61)
 # Start from the second bond
 for (i in 2:11){
   for (j in 1:10){
-    price = clean_data[i,j+9]
-    coupon = dirty_data$Coupon[i]*100
     pv_sum = 0
+    coupon = dirty_data$Coupon[i]*100
     maturityInYears = dirty_data[i,7]
+    price = clean_data[i,j+9]
     future_c_time =seq((6-last_pay_month[i]), 
                       mature_in_month_new[i], by=6)/12
     for (k in 1:length(future_c_time)){
@@ -131,6 +131,8 @@ for (i in 2:11){
   }
 }
 ```
+
+
 Q4b)\textbf{This is the plot of all the spot curves:}
 ```{r,fig.height=3, fig.width=5}
 # Plot the Spots Curve
